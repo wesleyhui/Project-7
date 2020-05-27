@@ -1,7 +1,5 @@
 /*----Base Style----*/
 
-/*-Universal Selector-*/
-
 * { 
 	box-sizing: border-box;
 } 
@@ -36,4 +34,215 @@ header {
         "header"
         "navigation"
         "main";
+}
+
+/*----Header Layout----*/
+
+.header {
+    grid-area:header;
+    background-color: #7477bf;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 0 10px;
+}
+
+.header span { 
+    color: greenyellow;
+    font-size: 3rem;
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    border-radius: 50%;
+}
+
+.header span:hover {
+    color: gold;
+}
+
+.bell_icon { 
+    display: flex;
+    align-items:center;
+    position: relative;
+    padding-right: 15px;
+}
+
+.bell_notification { 
+    width: 30px;
+    height: auto;
+    margin-right: 5px; 
+}
+
+.header img { 
+    border-radius: 50%;
+    width: 30px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.header h1 { 
+    color: white;
+    font-size: 1em;
+    margin-right: 120px;
+}
+
+.header h3 {
+    color: white;
+    font-size: 0.5em;
+}
+
+/*----Navigation Layout Style----*/
+
+.navigation { 
+    grid-area: navigation;
+    background: #4d4c72;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 4rem;
+    z-index: 2;
+    text-align: center;
+}
+
+.navigation img {
+    width: 100%;
+    text-align: center;
+}
+
+.navigation a {
+    width: 35px;
+    height: auto;
+    margin-left: 15px;
+    margin-top: 15px;
+    border-bottom: 2px solid #4d4c72;
+}
+
+.navigation a:hover { 
+    border-bottom: 3px solid lightgreen;
+}
+
+/*----Main Container Layout----*/
+
+.main_container {
+    grid-area:main;
+    display: block;
+    width: 100%;
+}
+
+.dash_alert {
+    padding: 0;
+}
+
+.dashboard_header { 
+    background-color: #fbfbfb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dashboard_header h2 { 
+    margin: auto;
+    padding-top: 15px;  
+}
+
+.searchbar {
+   margin: auto;
+   margin-top: 15px;
+   margin-bottom: 15px; 
+   color: #888888;
+   padding: 5px;
+   width: 200px;
+   border-radius: 5px;
+}
+
+/*----Alert----*/
+
+.alert-banner { 
+    margin: 0 10px;
+    margin-top: 10px;
+    padding: 0 10px;
+    background-color: #7477bf;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.alert-banner h4 {
+    margin-right: auto;
+}
+.alert-banner-close { 
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.5s; 
+    margin-left: auto;  
+}
+
+.alert-banner-close:hover {
+    color: #4d4c72;
+}
+
+/*-----Traffic----*/
+
+.traffic {
+    border-bottom: solid 1px #dfdfdf;
+}
+
+.traffic_header h3 { 
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.traffic_nav { 
+    margin: 0;
+    padding-right: 10px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    font-weight: bolder;
+}
+
+.traffic-nav-link {
+    padding-bottom: 10px;
+    padding-right: 15px;
+}
+
+.traffic_nav li:hover { 
+    background-color:lightgreen;
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.daily {
+    border-bottom: solid 1px #dfdfdf;
+    
+}
+
+.daily_traffic h3 { 
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*----Mobile User----*/
+
+.mobile_users {
+    padding-bottom: 20px;
+}
+.mobile { 
+   border-bottom: solid 1px #dfdfdf;
+} 
+.mobile_users h3 { 
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
