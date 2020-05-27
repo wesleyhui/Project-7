@@ -245,4 +245,375 @@ header {
     margin-left: 15px;
     margin-top: 10px;
     margin-bottom: 10px;
+} 
+
+/*----Social Stats Section----*/
+
+.social {
+    border-bottom: solid 1px #dfdfdf;
+}
+
+.social-info h3 { /*social stats heading*/
+    margin-left: 15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+.twitter_section,
+.facebook_section,
+.google_section { /*social stats containers*/
+    background-color: #fbfbfb;
+    border: 1px solid #b9b9b9;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row; 
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.twitter-icon,
+.facebook-icon,
+.google-icon { /*social stats path*/
+    fill: white;
+}
+
+.twitter-img,
+.facebook-img,
+.google-img { /*social stats images*/
+    height: 60px;
+    width: 60px;
+    margin-top: 10px;
+    margin-bottom: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.social svg { /*social stats background*/
+    background-color: #7477bf;
+    border-radius: 30%;
+    height: 70px;
+    width: 70px;
+    padding: 10px;
+}
+
+.social svg:hover { /*social stats circle hover*/
+    background-color: blue;   
+}
+
+.social_text_twitter,
+.social_text_facebook,
+.social_text_google { /*social stats text*/
+    text-align: center;
+    padding-top: 10px;
+}
+
+#twitter-bold,
+#facebook-bold,
+#google-bold { /*social stats text*/
+    color: #7377BF;
+    font-weight: bolder;
+    margin: 0 ; 
+    text-align: left;
+}
+
+#twitter-number,
+#facebook-number,
+#google-number { /*social stats number*/
+    font-size: 3em;
+    margin: 0 ;   
+}
+
+/*=============New Members Section==================*/
+
+.members,
+.activity { 
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.new_members h3{ 
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.members_container_1,
+.members_container_2,
+.members_container_3,
+.members_container_4 { 
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    align-items: center;
+    font-size: 11px;
+}
+
+.members_container_1,
+.members_container_2,
+.members_container_3 {
+    border-bottom: solid 1px #dfdfdf;
+    
+}
+
+.members_container_1 img,
+.members_container_2 img,
+.members_container_3 img,
+.members_container_4 img { 
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.members_text { 
+    margin-left: 0;
+    margin-right: auto;
+    padding: 5px;
+}
+
+.members_text p {  
+    font-weight: bolder;
+}
+
+/*----Recent Activity Section----*/
+
+.activity h3 { 
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.activity_container_1,
+.activity_container_2,
+.activity_container_3,
+.activity_container_4 { 
+    display: flex;
+    flex-direction: row;   
+    padding: 5px;
+    align-items: center;
+    font-size: 12px;   
+}
+
+.activity_container_1,
+.activity_container_2,
+.activity_container_3 {
+    border-bottom: solid 1px #dfdfdf;
+}
+
+.activity_container_1 img,
+.activity_container_2 img,
+.activity_container_3 img,
+.activity_container_4 img { 
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.activities_text { 
+    margin-left: 0;
+    margin-right: auto;
+    padding: 5px;
+}
+
+.activity_arrow { 
+    font-size: 20px;
+    color: #7477bf;
+}
+
+/*----Message User----*/
+
+.message h3 {
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.widget_container { 
+    text-align: center;
+}
+
+.widget_container input { 
+    width: 90%;
+    border-radius: 5px;
+    border: solid 1px #d1d1d1 ;
+    background: #fbfbfb;
+    color: black;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.widget_container input::placeholder {
+    color: #d1d1d1;
+}
+
+.widget_container textarea { 
+    width: 90%;
+    resize: none;
+    border-radius: 5px;
+    border: solid 1px #d1d1d1;
+    color: black;
+    background: #fbfbfb;
+    padding: 10px 10px 50px 10px;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.widget_container textarea::placeholder {
+    font-family: 'Roboto';
+    color: #d1d1d1;
+}
+
+.widget_container button { 
+    width: 90%;
+    padding: 10px 0px;
+    border: none;
+    border-radius: 5px;
+    background: #7477bf;
+    color: white;
+    text-transform: uppercase;   
+}
+
+/*----Settings----*/
+
+.settings { 
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.settings h3 { 
+    margin-left: 15px;
+}
+
+.timezone_settings { 
+    text-align: center;
+}
+
+.timezone { 
+    width: 95%;
+    background: #fbfbfb;
+    color: #d1d1d1;
+    border: solid 1px #d1d1d1;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.buttons { 
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+.primary_button { 
+    width: 47.5%;
+    background:#7477bf;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    padding-right: 10px;   
+}
+
+.disable_button { 
+    width: 47.5%;
+    background: #b2b2b2;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    padding: 10px;   
+}
+
+label {
+    margin-bottom: 20px;
+}
+
+.switch { 
+    display: inline-block;
+    cursor: pointer;
+}
+
+.settings_switches { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.toggle-switch { 
+    display: inline-block;
+    background: #595959;
+    border-radius: 16px;
+    width: 70px;
+    height: 35px;
+    position: relative;
+    vertical-align: middle;
+    transition: 0.5s;
+    margin-left: 10px;
+}
+
+.toggle-switch:before,
+.toggle-switch:after { 
+    content: "";
+}
+
+.toggle-switch:before { 
+    display: block;
+    background: linear-gradient(to bottom, white 0%, white 100%);
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    transition: left 0.5s;
+}
+
+.checkbox_switch:checked + .toggle-switch { 
+    background: #7477bf;
+}
+
+.checkbox_switch:checked + .toggle-switch:before { 
+    left: 40px;
+}
+
+.checkbox_switch { 
+    position: absolute;
+    visibility: hidden;
+}
+
+.notifications_label, 
+.public_label { 
+    margin-left: 5px;
+    position: relative;
+    font-weight: bold;
+    top: 2px;
+}
+
+.public_label { 
+    padding-right: 35px;
+}
+
+input:checked + .toggle-switch:after {
+    content: 'ON';
+    color: white;
+    display: flex;
+    justify-content: flex-start; 
+    position: absolute;
+    padding: 10px;
+} 
+
+.toggle-switch:after {
+    content: 'OFF';
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
 }
