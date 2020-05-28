@@ -70,6 +70,15 @@ header {
     padding-right: 15px;
 }
 
+.bell_icon .bell{
+    transition: .3s all ease-in-out;
+}
+
+.bell_icon .bell:hover { 
+    transition: .1s all ease-in-out;
+    transform: translate(0,10px) rotate(45deg); 
+}
+
 .bell_notification { 
     width: 30px;
     height: auto;
@@ -93,6 +102,7 @@ header {
     color: white;
     font-size: 0.5em;
 }
+
 
 /*----Navigation Layout Style----*/
 
@@ -123,6 +133,7 @@ header {
 .navigation a:hover { 
     border-bottom: 3px solid lightgreen;
 }
+
 
 /*----Main Container Layout----*/
 
@@ -221,6 +232,8 @@ header {
     border-radius: 10px;
     padding: 5px;
 }
+
+/*----Daily Traffic----*/
 
 .daily {
     border-bottom: solid 1px #dfdfdf;
@@ -653,7 +666,7 @@ input:checked + .toggle-switch:after {
         margin-left:0px;  
     }
 
-    .navigation a:hover { /*Nav Icons on Hover*/
+    .navigation a:hover { 
         padding: 5px;
         border-left: 2px solid lightgreen;
         border-bottom: none;
@@ -680,18 +693,18 @@ input:checked + .toggle-switch:after {
         margin-bottom: 0px;
     }
 
-    .alert-banner { /*JS alert*/
+    .alert-banner { 
         margin: 0 auto 0 5px;
        
     }
 
-   .traffic_nav{ /*traffic nav layout*/
+   .traffic_nav{ 
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
     }
    
-    .social { /*social stats container*/
+    .social { 
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -702,7 +715,7 @@ input:checked + .toggle-switch:after {
 
     .twitter_section,
     .facebook_section,
-    .google_section { /*social stats sections*/
+    .google_section { 
         width: 30%;
         padding-left: 0px;
         margin-top: 20px;
@@ -712,12 +725,12 @@ input:checked + .toggle-switch:after {
     
     #twitter-number,
     #facebook-number,
-    #google-number { /*social stats number*/
+    #google-number { 
         font-size: 2em;
         margin: 0 ;   
     }
 
-    .social svg { /*social stats background*/
+    .social svg { 
         background-color: #7477bf;
         border-radius: 30%;
         height: 55px;
@@ -725,7 +738,7 @@ input:checked + .toggle-switch:after {
         padding: 10px;
     }
 
-    .half-size-charts{ /*daily & mobile grid*/
+    .half-size-charts{ 
         display: grid;
         grid-auto-columns: 1fr;
 
@@ -734,7 +747,7 @@ input:checked + .toggle-switch:after {
     .members_container_1,
     .members_container_2,
     .members_container_3,
-    .members_container_4 { /*members container*/
+    .members_container_4 { 
         height:92px;
         width: 90%;
     }
@@ -746,13 +759,13 @@ input:checked + .toggle-switch:after {
         height: 92px;
         width: 90%;
     }
-    .member-info { /*member & activity grid*/
+    .member-info { 
         display: grid;
         grid-auto-columns: 1fr;
         
     }
 
-    .message-setting-info { /*message & setting grid*/
+    .message-setting-info { 
         display: grid;
         grid-auto-columns: 1fr;
         
@@ -760,14 +773,14 @@ input:checked + .toggle-switch:after {
 
     .daily,
     .members,
-    .message { /*these start in column 1*/
+    .message { 
         grid-column: 1 / span 1;
         border-right: solid 1px #dfdfdf;
     }
 
     .mobile,
     .activity,
-    .settings { /*these start in column 2*/
+    .settings { 
         grid-column: 2 / span 1;
     }
 
@@ -788,4 +801,49 @@ input:checked + .toggle-switch:after {
         margin: 0;
     }
    
+}
+
+@media (min-width: 1024px) {
+    grid-container {
+        max-width: 1040px;
+    }
+
+    .alert-banner { 
+        margin: 0 10px;
+       
+    }
+
+    #twitter-number,
+    #facebook-number,
+    #google-number { 
+        font-size: 3em;
+        margin: 0 ;   
+    }
+
+    .social svg { 
+        background-color: #7477bf;
+        border-radius: 30%;
+        height: 70px;
+        width: 70px;
+        padding: 10px;
+    }
+
+    .members_container_1,
+    .members_container_2,
+    .members_container_3,
+    .members_container_4 { 
+        height:85px;
+        width: auto;
+    }
+
+    .activity_container_1,
+    .activity_container_2,
+    .activity_container_3,
+    .activity_container_4 {
+        height:85px;
+        width: auto;
+    }
+    .settings {
+        margin: 0;
+    }
 }
