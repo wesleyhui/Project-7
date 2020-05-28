@@ -617,3 +617,175 @@ input:checked + .toggle-switch:after {
     justify-content: flex-end;
     padding: 10px;
 }
+
+/*----Layout of Graphs----*/
+
+.widget_container_full,
+.widget_container_half {
+    width: 95vw;
+}
+
+/*----Media Queries ----*/
+
+@media (min-width:768px){
+    .grid_container {
+        grid-template-columns: 55px 1fr;
+        grid-template-areas:
+            "header header"
+            "navigation main";
+    }
+
+    .main_container {
+        grid-template-columns: 50%;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column;   
+    }
+
+    .navigation a {
+        margin-left: 10px;
+    }
+
+    .navigation img{
+        width: 60%;
+        margin-left:0px;  
+    }
+
+    .navigation a:hover { /*Nav Icons on Hover*/
+        padding: 5px;
+        border-left: 2px solid lightgreen;
+        border-bottom: none;
+        fill: white;
+    }
+
+    .dashboard_header {
+        flex-direction: row;
+        height: 50px;
+        width: 100%;
+    }
+
+    .dashboard_header h2 {
+        margin-left: 15px;
+        padding-top: 0;
+    }
+
+    .searchbar {
+        margin-right: 15px;
+    }
+
+    .searchbar input {
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+
+    .alert-banner { /*JS alert*/
+        margin: 0 auto 0 5px;
+       
+    }
+
+   .traffic_nav{ /*traffic nav layout*/
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+   
+    .social { /*social stats container*/
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        justify-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .twitter_section,
+    .facebook_section,
+    .google_section { /*social stats sections*/
+        width: 30%;
+        padding-left: 0px;
+        margin-top: 20px;
+        align-self: center;
+        justify-self: center; 
+    }
+    
+    #twitter-number,
+    #facebook-number,
+    #google-number { /*social stats number*/
+        font-size: 2em;
+        margin: 0 ;   
+    }
+
+    .social svg { /*social stats background*/
+        background-color: #7477bf;
+        border-radius: 30%;
+        height: 55px;
+        width: 65px;
+        padding: 10px;
+    }
+
+    .half-size-charts{ /*daily & mobile grid*/
+        display: grid;
+        grid-auto-columns: 1fr;
+
+    }
+    
+    .members_container_1,
+    .members_container_2,
+    .members_container_3,
+    .members_container_4 { /*members container*/
+        height:92px;
+        width: 90%;
+    }
+
+    .activity_container_1,
+    .activity_container_2,
+    .activity_container_3,
+    .activity_container_4 {
+        height: 92px;
+        width: 90%;
+    }
+    .member-info { /*member & activity grid*/
+        display: grid;
+        grid-auto-columns: 1fr;
+        
+    }
+
+    .message-setting-info { /*message & setting grid*/
+        display: grid;
+        grid-auto-columns: 1fr;
+        
+    }
+
+    .daily,
+    .members,
+    .message { /*these start in column 1*/
+        grid-column: 1 / span 1;
+        border-right: solid 1px #dfdfdf;
+    }
+
+    .mobile,
+    .activity,
+    .settings { /*these start in column 2*/
+        grid-column: 2 / span 1;
+    }
+
+    .message,
+    .settings {
+        border-top: solid 1px #dfdfdf;
+    }
+
+    .widget_container_full {
+        width: 90vw;
+    }
+
+    .widget_container_half {
+        width: 45vw;
+    }
+
+    .settings {
+        margin: 0;
+    }
+   
+}
