@@ -109,7 +109,7 @@ let dailyChart = new Chart(dailyCanvas, {
     options: dailyOptions
 });
 
-//Doughnut Chart Mobile Users
+//Donut Chart Mobile Users
 const mobileData = {
     labels: ["Phones", "Tablets", "Desktop"],
     datasets: [{
